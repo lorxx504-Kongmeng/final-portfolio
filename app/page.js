@@ -2,7 +2,7 @@
 import Image from "next/image"
 export default function Home() {
   return (
-  <div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden sm:max-w-2xl">
+  <div className="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden sm:max-w-2xl">
     {/* <div class="sm:flex">
       <div class="md:shrink-0">
         <Image class="h-48 w-full object-cover md:h-full" src="/favicon.ico" alt="Modern building architecture" width={200} height={200}></Image>
