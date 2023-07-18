@@ -9,7 +9,7 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   }
   return (
-    <nav className='fixed w-full h-20 shadow-xl z-[10] top-0 left-0 backdrop-blur-xlt bg-white'>
+    <nav className='fixed w-full h-20 shadow-xl z-[10] top-0 left-0 bg-black text-white'>
       <div className='flex justify-between items-center h-full w-full px-2'>
         <div className='p-4'>
           <Link href="/"><h1 className='hover:font-bold hover:border-b text-xl hover:shadow'>developedbyKongmengLor</h1></Link>
@@ -25,7 +25,7 @@ const Navbar = () => {
         <div onClick={handleNav } className='md:hidden cursor-pointer pl-24'>
           <AiOutlineMenu size={25} className='hover:shadow-xl hover:scale-90'/>
         </div>
-        <div className={menuOpen ? "fixed left-0 top-0 w-[65%] m:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500" : "fixed left-[-100%] top-0 p-10 ease-in duartion-500" }>
+        <div className={menuOpen ? "fixed left-0 top-0 w-[65%] m:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500 bg-black" : "fixed left-[-100%] top-0 p-10 ease-in duartion-500" }>
           <div className='flex w-full items-center justify-end'>
             <div onClick={handleNav} className='cursor-pointer rounded-full shadow-lg shadow-gray-700 p-2'>
               <AiOutlineClose size={25} className='hover:scale-90'></AiOutlineClose>
