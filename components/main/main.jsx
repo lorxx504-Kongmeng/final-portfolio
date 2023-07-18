@@ -6,14 +6,16 @@ import Image from 'next/image'
 const Main = () => {
   return (
     <div className='w-full h-screen text-center break-normal '>
+        {/* <div style={{position: 'relative', height: '200px'}}>
+                    <Image src="/main/shot.png" fill></Image>
+                    <div className='text-white'>
+                        <h1>Hello</h1>
+                    </div>
+            </div> */}
 
         <div className='w-full h-full mx-auto p-2 flex justify-center items-center'>
-            {/* <div style={{position: 'relative', height: '200px'}}>
-                    <Image src="/main/shot.png" fill></Image>
-            </div> */}
-            <div className='p-2 max-w-[600px]'>
-                
 
+            <div className='p-2 max-w-[600px]'>
                 <div className='max-w-[120px] md:max-w-[140px]'>
                     <p className='text-2xl'>{data.introduction}</p>
                 </div>
@@ -26,7 +28,7 @@ const Main = () => {
                     <p className='mb-2 mt-2 text-2xl'>{data.position}</p>
                 </div> */}
 
-                <div className='flex justify-start p-6 max-w-[600px] '>
+                <div className='flex justify-start p-2 max-w-[600px] '>
                     <p className='text-base'>{data.description}</p>
                 </div>
 

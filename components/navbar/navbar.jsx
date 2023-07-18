@@ -18,7 +18,7 @@ const Navbar = () => {
           <ul className='hidden md:flex'>
             <Link href="/about"><li className='ml-10 uppercase text-xl hover:font-bold '>About</li></Link>
             <Link href="/projects"><li className='ml-10 uppercase text-xl hover:font-bold'>Project</li></Link>
-            <Link href="/experinces"><li className='ml-10 uppercase text-xl hover:font-bold'>Experinces</li></Link>
+            <Link href="/experiences"><li className='ml-10 uppercase text-xl hover:font-bold'>Experinces</li></Link>
             <Link href="/contact"><li className='ml-10 uppercase text-xl hover:font-bold'>Contact</li></Link>
           </ul>
         </div>
