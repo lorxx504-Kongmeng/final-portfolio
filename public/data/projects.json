@@ -4,9 +4,27 @@
         "title": "developedbyKongmengLor.com",
         "website": "http://kongmenglor.com/",
         "description": "This is my personal website that I created using the Next.js framework, along with Tailwind CSS and other React components. This website represents just the beginning of my journey with Next.js, as I continue to make progress and expand my knowledge of Next.js and React.js. It's my first time exploring Next.js and Tailwind CSS, particularly as I have prior experience as an Angular developer. You can find all the code for this website on my GitHub page.",
-        "link": "https://github.com/lorxx504-Kongmeng/my_portfolio.git",
-        "language": ["Nextjs", "Tailwind CSS", "Material UI", "Javascript", "HTML", "CSS"],
-        "image": "/projects/portfolio/portfolio_front.png"
-      }
+        "link": "https://github.com/lorxx504-Kongmeng/final-portfolio",
+        "languages": ["Nextjs", "Javascript", "Tailwind CSS", "HTML", "CSS"],
+        "image": "/projects/project1/photo.png"
+    },
+    {
+        "id": 1,
+        "title": "WikiRocket!",
+        "website": "https://github.com/lorxx504-Kongmeng/WikiRocket.git",
+        "description": "This project leverages Next.js 13 for development and incorporates Tailwind CSS for styling all the components. Its main functionality revolves around data fetching, specifically retrieving search results from Wikipedia.",
+        "link": "https://github.com/lorxx504-Kongmeng/WikiRocket.git",
+        "languages": ["Next.js", "Tailwind CSS","Typescript","Data Fetching"],
+        "image": "/projects/project4/project4f.png"
+    },
+    {
+        "id": 1,
+        "title": "Employee Management Application",
+        "website": "https://github.com/lorxx504-Kongmeng/Employee-Angular.git",
+        "description": "This project utilizes Spring Boot for the backend and Angular for the frontend. It serves as an employee management application, offering CRUD operations to enable users to add, delete, update, and search for employees. Additionally, I incorporated a Postman collection for thorough API testing. To enhance user-friendly navigation, I integrated Bootstrap for the UI components.",
+        "link": "https://github.com/lorxx504-Kongmeng/Employee-Spring.git",
+        "languages": ["Angular", "Spring Boot", "Java", "Typescript", "Bootstrap"],
+        "image": "/projects/project2/project2.png"
+    }
       
 ]
