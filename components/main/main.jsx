@@ -8,13 +8,6 @@ import Link from 'next/link';
 const Main = () => {
   return (
     <div className='w-full h-screen text-center break-normal'>
-        {/* <div style={{position: 'relative', height: '200px'}}>
-                    <Image src="/main/shot.png" fill></Image>
-                    <div className='text-white'>
-                        <h1>Hello</h1>
-                    </div>
-            </div> */}
-
         <div className='w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div className='p-2 max-w-[1000px] md:pl-24'>
                 <div className='md:flex md:justify-start text-2xl flex pl-14 text-gray-600 md:text-start'>                

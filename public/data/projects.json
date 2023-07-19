@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "title": "developedbyKongmengLor.com",
+        "website": "http://kongmenglor.com/",
+        "description": "This is my personal website that I created using the Next.js framework, along with Tailwind CSS and other React components. This website represents just the beginning of my journey with Next.js, as I continue to make progress and expand my knowledge of Next.js and React.js. It's my first time exploring Next.js and Tailwind CSS, particularly as I have prior experience as an Angular developer. You can find all the code for this website on my GitHub page.",
+        "link": "https://github.com/lorxx504-Kongmeng/my_portfolio.git",
+        "language": ["Nextjs", "Tailwind CSS", "Material UI", "Javascript", "HTML", "CSS"],
+        "image": "/projects/portfolio/portfolio_front.png"
+      }
+      
+]
