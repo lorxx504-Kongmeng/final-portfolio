@@ -1,5 +1,5 @@
 import React from 'react'
-import data from '../main/introduction.json'
+import data from '../../public/data/introduction.json'
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import {IoIosPaper} from 'react-icons/io'
 import Link from 'next/link';

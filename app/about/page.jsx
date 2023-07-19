@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import { IoBusinessSharp, IoSchoolSharp, IoLocation, IoDocument } from "react-icons/io5";
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import Link from 'next/link';
 
 const About = () => {
     const languages = [
@@ -14,15 +16,17 @@ const About = () => {
         <div className='p-2 max-w-[1400px] flex justify-center w-full h-full'> 
             <div className='py-24 flex'>
                 <div className='px-2'>
-                    <div className='md:flex md:justify-start'>
-                        <h1 className='text-3xl md:text-4xl md:font-extrabold italic'>1. About</h1>
-                    </div>
-                    <div className='md:flex md:justify-start md:text-start'>
-                        <h2 className='text-6xl mt-2 md:font-bold italic'>Who I am.</h2>
-                    </div>
-                    <div className='md:flex md:justify-start md:mt-4 md:text-start flex justify-center'>
-                        <p className='mt-2 text-base md:text-xl md:leading-normal'>Hello, my name is Kongmeng Lor and I am a Full Stack Engineer hailing from Minnesota. I hold a Bachelor's degree in Information Technology Infrastructure of Data Management from the University of Minnesota, Twin Cities, supplemented by a minor in Computer Science. In addition, I have successfully completed the York Solution B2E Full Stack Software Engineer Bootcamp. As I advance in my software development career, I am continuously enhancing my skills and knowledge. If you have any job openings or opportunities available, I would greatly appreciate the chance to connect with you.</p>
-                    </div>
+                    <div className='shadow-2xl rounded-2xl p-6'>
+                        <div className='md:flex md:justify-start'>
+                            <h1 className='text-4xl  md:text-6xl md:font-extrabold'>About Me.</h1>
+                        </div>
+                        {/* <div className='md:flex md:justify-start md:text-start'>
+                            <h2 className='text-6xl mt-2 md:font-bold italic'>Who I am.</h2>
+                        </div> */}
+                        <div className='md:flex md:justify-start md:mt-4 md:text-start flex justify-center'>
+                            <p className='mt-2 text-base md:text-xl md:leading-normal'>Hello, my name is Kongmeng Lor and I am a Full Stack Engineer hailing from Minnesota. I hold a Bachelor's degree in Information Technology Infrastructure of Data Management from the University of Minnesota, Twin Cities, supplemented by a minor in Computer Science. In addition, I have successfully completed the York Solution B2E Full Stack Software Engineer Bootcamp. As I advance in my software development career, I am continuously enhancing my skills and knowledge. If you have any job openings or opportunities available, I would greatly appreciate the chance to connect with you.</p>
+                        </div>
+                    
                     <Image src="/profile/headshot.png" width={1000} height={100} className='md:p-4 md:ml-5 md:hidden'></Image>
                     <div className='md:hidden'>
                         <div className='flex justify-center'>
@@ -99,9 +103,21 @@ const About = () => {
                             </div>
                         </div>
                     </div>
+                    </div>
                 </div>
-                <div className='hidden md:block'>
-                    <Image src="/profile/headshot.png" width={4000} height={100} className='p-4 ml-5 cursor-pointer shadow-2xl rounded-full hover:shadow-gray-800'></Image>
+                <div className='hidden md:block shadow-2xl '>
+                    <Image src="/profile/headshot.png" width={3000} height={100} className='p-4 ml-5 cursor-pointer hover:shadow-gray-800'></Image>
+                    <div className='flex justify-center'>
+                        <div className='flex items-center justify-start max-w-[330px] md:max-w-[800px] m-auto py-4'>
+                        <div className="rounded-xl shadow-lg shadow-gray-600 p-8 cursor-pointer hover:scale-90">
+                            <Link href="https://www.linkedin.com/in/kongmengl" target="_blank"><FaLinkedin/></Link>
+                        </div>
+                        <div className="rounded-xl shadow-lg shadow-gray-600 p-8 cursor-pointer hover:scale-90 ml-4">
+                            <Link href="https://github.com/lorxx504-Kongmeng" target='_blank'><FaGithub /></Link>
+                        </div>   
+                    </div>
+                    
+                    </div>
                 </div>
                 <div className='hidden md:block'>
                     
