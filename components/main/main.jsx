@@ -10,16 +10,16 @@ const Main = () => {
     <div className='w-full h-screen text-center break-normal'>
         <div className='w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div className='p-2 max-w-[1000px] md:pl-24'>
-                <div className='md:flex md:justify-start text-2xl flex pl-14 text-gray-600 md:text-start'>                
+                <div className='md:flex md:justify-start md:pl-10 text-2xl flex pl-14 text-gray-600 md:text-start'>                
                     <div className='flex'>
                         <h1 className='ml-2'>Hello,</h1>
                         <h1 className='ml-2 '>I'm</h1>
                     </div>    
                 </div>
-                <div className='flex justify-center text-5xl font-bold md:text-8xl md:flex md:justify-start md:text-start md:pl-10 hover:italic'>
+                <div className='flex justify-center text-5xl font-bold md:text-8xl md:flex md:justify-start md:text-start md:pl-10'>
                     <div className='flex'>
-                        <h1 className=''>{data.first_Name}</h1>
-                        <h1 className='ml-4 hover:italic'>{data.last_Name}.</h1>
+                        <h1>{data.first_Name}</h1>
+                        <h1 className='ml-4'>{data.last_Name}.</h1>
                     </div>
                 </div>
                 <div className= 'pl-12 mt-4'>

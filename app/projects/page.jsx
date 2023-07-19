@@ -10,7 +10,7 @@ const Project = () => {
     <div className='h-max w-full text-center break-normal flex justify-center'>
       <div className='flex justify-center w-full h-full'>
         <div className='py-18'>
-          <h1 className='text-4xl font-bold pb-4'>Projects.</h1>
+          <h1 className='text-4xl font-bold pb-4 md:uppercase'>Projects.</h1>
           <div>
             <div className='md:p-4'>
               {projects.map((project) => {
@@ -38,7 +38,7 @@ const Project = () => {
                             </div>
                         })}
                       </div>
-                      <div >
+                      <div className='mt-4'>
                         <Link href={project.link} target='_blank'><h1 className='mt-2 p-2 shadow-2xl bg-gray-800 text-white rounded' >View Codes</h1></Link>
                       </div>
                     </div>
@@ -46,7 +46,7 @@ const Project = () => {
 
                 </div>
               })}
-              <div className='py-4 flex justify-center md:justify-center'>
+              <div className='py-16 flex justify-center md:justify-center'>
                 <div className=''>
                   <h1 className='text-xl'>View My GitHub For more Projects.</h1>
                   <div className='flex justify-center  cursor-pointer '>
