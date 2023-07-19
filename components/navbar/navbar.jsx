@@ -36,7 +36,7 @@ const Navbar = () => {
               <Link href="/" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Home</li></Link>
               <Link href="/about" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>About</li></Link>
               <Link href="/projects" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Project</li></Link>
-              <Link href="/experinces" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Experinces</li></Link>
+              <Link href="/experiences" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Experinces</li></Link>
               <Link href="/contact" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Contact</li></Link>
             </ul>
           </div>
