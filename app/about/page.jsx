@@ -33,7 +33,7 @@ const About = () => {
                             <p className='mt-2 text-base md:text-based md:leading-normal'>Hello, my name is Kongmeng Lor and I am a Full Stack Engineer hailing from Minnesota. I hold a Bachelor's degree in Information Technology Infrastructure of Data Management from the University of Minnesota, Twin Cities, supplemented by a minor in Computer Science. In addition, I have successfully completed the York Solution B2E Full Stack Software Engineer Bootcamp. As I advance in my software development career, I am continuously enhancing my skills and knowledge. If you have any job openings or opportunities available, I would greatly appreciate the chance to connect with you.</p>
                         </div>
                     
-                    <Image src="/profile/headshot.png" width={1000} height={100} className='md:p-4 md:ml-5 md:hidden'></Image>
+                    <Image src="/profile/headshot.png" width={1000} height={100} alt="profile"className='md:p-4 md:ml-5 md:hidden'></Image>
                     <div className='md:hidden'>
                         <div className='flex justify-center p-8'>
                             <IoSchoolSharp className='mt-1'></IoSchoolSharp>
@@ -55,15 +55,15 @@ const About = () => {
                     <div className='md:hidden'>
                         <div className='mt-2'>
                             <div className='flex justify-center mt-2'>
-                                {languages.map((item) => {
-                                    return <div className='ml-2 bg-slate-600 rounded-lg px-1 py-2 text-white cursor-pointer'>{item}</div>
+                                {languages.map((item, id) => {
+                                    return <div key={id} className='ml-2 bg-slate-600 rounded-lg px-1 py-2 text-white cursor-pointer'>{item}</div>
                                 })}
                             </div>
                         </div>
                         <div className='mt-2'>
                             <div className='flex mt-2 justify-center'>
-                                {frameworks.map((item) => {
-                                    return <div className='ml-1 bg-slate-600 rounded-lg px-1 py-2 text-white cursor-pointer'>{item}</div>
+                                {frameworks.map((item, id) => {
+                                    return <div key={id} className='ml-1 bg-slate-600 rounded-lg px-1 py-2 text-white cursor-pointer'>{item}</div>
                                 })}
                             </div>
                         </div>
@@ -94,15 +94,15 @@ const About = () => {
                         <div className='mt-4'>
                             <div className='flex'>
                                 <div className='flex'>
-                                    {languages.map((item) => {
-                                        return <div className='mr-2 bg-gray-600 rounded-lg px-3 py-1 text-white cursor-pointer'>{item}</div>
+                                    {languages.map((item, id) => {
+                                        return <div key={id} className='mr-2 bg-gray-600 rounded-lg px-3 py-1 text-white cursor-pointer'>{item}</div>
                                     })}
                                 </div>
                             </div>
                             <div className='flex mt-5'>
                                 <div className='flex'>
-                                    {frameworks.map((item) => {
-                                        return <div className='mr-2 bg-gray-600 rounded-lg px-3 py-1 text-white cursor-pointer hover:scale-90'>{item}</div>
+                                    {frameworks.map((item, id) => {
+                                        return <div key={id} className='mr-2 bg-gray-600 rounded-lg px-3 py-1 text-white cursor-pointer hover:scale-90'>{item}</div>
                                     })}
                                 </div>
                             </div>
@@ -112,7 +112,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className='hidden md:block shadow-2xl '>
-                    <Image src="/profile/headshot.png" width={2000} height={100} className='p-4 ml-5 cursor-pointer hover:shadow-gray-800'></Image>
+                    <Image src="/profile/headshot.png" alt='profile' width={2000} height={100} className='p-4 ml-5 cursor-pointer hover:shadow-gray-800'></Image>
                     <div className='flex justify-center'>
                         <div className='flex items-center justify-start max-w-[330px] md:max-w-[800px] m-auto py-4'>
                         <div className="rounded-xl shadow-lg shadow-gray-600 p-8 cursor-pointer ">

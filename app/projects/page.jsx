@@ -17,12 +17,12 @@ const Project = () => {
           <h1 className='text-4xl font-bold pb-4 md:uppercase text-gray-900'>Projects.</h1>
           <div>
             <div className='md:p-4'>
-              {projects.map((project) => {
-                return <div className='mt-5 md:shadow-2xl md:p-10'> 
+              {projects.map((project, id) => {
+                return <div  key={id} className='mt-5 md:shadow-2xl md:p-10'> 
                   <div className='md:flex'>
                     <div>
                       <div className='flex justify-center'>
-                        <Image src={project.image} width={300} height={500} ></Image>
+                        <Image src={project.image} alt='project' width={300} height={500} ></Image>
                       </div>
                     </div>
                     <div className='md:ml-4 mt-6'>
@@ -36,8 +36,8 @@ const Project = () => {
                         </div>
                       </div>
                       <div className='flex justify-center text-center'>
-                        {project.languages.map((item) => {
-                          return <div className='px-4 py-2 shadow-2xl rounded-full text-white bg-gray-600 mt-2'>
+                        {project.languages.map((item, id) => {
+                          return <div key={id} className='px-4 py-2 shadow-2xl rounded-full text-white bg-gray-600 mt-2'>
                               <h1 >{item}</h1>
                             </div>
                         })}

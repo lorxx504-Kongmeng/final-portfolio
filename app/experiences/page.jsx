@@ -15,8 +15,8 @@ const Experiences = () => {
               <div className='mt-2'>
                 <div className='md:flex md: justify-center items-center'>
                   <div className='mt-6'>
-                    {experiences.map((item) => {
-                      return <div className='text-xl p-2 mt-4 md:max-w-[60rem] rounded-b-3xl shadow-2xl md:p-4'>
+                    {experiences.map((item,id) => {
+                      return <div key={id} className='text-xl p-2 mt-4 md:max-w-[60rem] rounded-b-3xl shadow-2xl md:p-4'>
                         <div className='text-start'>
                           <div className='flex justify-between md:p-2 md:pl-4'>
                             <h1 className='font-bold md:text-2xl font-mono'>{item.title}</h1>
@@ -29,8 +29,8 @@ const Experiences = () => {
                          
 
                           <div className='flex mt-2 mb-2 md:hidden'>
-                            {item.skills.map((skill) => {
-                              return <div className='shadow-xl rounded-full mr-2 mt-4'>  
+                            {item.skills.map((skill,id) => {
+                              return <div key={id} className='shadow-xl rounded-full mr-2 mt-4'>  
                                     <h1 className='text-sm bg-gray-600 rounded py-1 p-2 text-white cursor-pointer '>{skill}</h1>
                                 </div>
                             })}
@@ -40,8 +40,8 @@ const Experiences = () => {
                           </div>
                           <div className='hidden md:block'>
                             <div className='flex mt-2 mb-2 md:p-2 md:pl-4'>
-                              {item.skills.map((skill) => {
-                                return <div className='shadow-xl rounded-full mr-2'>  
+                              {item.skills.map((skill, id) => {
+                                return <div key={id} className='shadow-xl rounded-full mr-2'>  
                                       <h1 className='text-sm bg-gray-600 rounded-full py-2 p-3 text-white cursor-pointer font-mono'>{skill}</h1>
                                   </div>
                               })}
