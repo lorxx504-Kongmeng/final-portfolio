@@ -12,14 +12,14 @@ const Navbar = () => {
     <nav className='fixed w-full h-20 shadow-xl z-[10] top-0 left-0 bg-black text-white font-mono'>
       <div className='flex justify-between items-center h-full w-full px-2'>
         <div className='p-4'>
-          <Link href="/"><h1 className='hover:font-bold hover:border-b text-2xl hover:shadow'>developedbyKongmengLor</h1></Link>
+          <Link href="/#home"><h1 className='hover:font-bold hover:border-b text-2xl hover:shadow'>developedbyKongmengLor</h1></Link>
         </div>
         <div className='p-4'>
           <ul className='hidden md:flex'>
-            <Link href="/about"><li className='ml-10 uppercase text-xl hover:font-bold '>About</li></Link>
-            <Link href="/projects"><li className='ml-10 uppercase text-xl hover:font-bold'>Project</li></Link>
-            <Link href="/experiences"><li className='ml-10 uppercase text-xl hover:font-bold'>Experinces</li></Link>
-            <Link href="/contact"><li className='ml-10 uppercase text-xl hover:font-bold'>Contact</li></Link>
+            <Link href="/#about"><li className='ml-10 uppercase text-xl hover:font-bold '>About</li></Link>
+            <Link href="/#experiences"><li className='ml-10 uppercase text-xl hover:font-bold'>Experinces</li></Link>
+            <Link href="/#projects"><li className='ml-10 uppercase text-xl hover:font-bold'>Project</li></Link>
+            <Link href="/#contact"><li className='ml-10 uppercase text-xl hover:font-bold'>Contact</li></Link>
           </ul>
         </div>
         <div onClick={handleNav } className='md:hidden cursor-pointer pl-24'>
@@ -34,10 +34,10 @@ const Navbar = () => {
           <div className='w-full items-center'>
             <ul className='pt-10'>
               <Link href="/" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Home</li></Link>
-              <Link href="/about" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>About</li></Link>
-              <Link href="/projects" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Project</li></Link>
-              <Link href="/experiences" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Experinces</li></Link>
-              <Link href="/contact" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Contact</li></Link>
+              <Link href="/#about" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>About</li></Link>
+              <Link href="/#experiences" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Experinces</li></Link>
+              <Link href="/#projects" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Project</li></Link>
+              <Link href="/#contact" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Contact</li></Link>
             </ul>
           </div>
           <div className='flex pt-10 items-center'>

@@ -4,10 +4,14 @@ import projects from '../../public/data/projects.json'
 import { FaGithub } from 'react-icons/fa';
 import Link from 'next/link'
 
+export const metadata = {
+  title: "Projects"
+}
+
 const Project = () => {
 
   return (
-    <div className='h-max w-full text-center break-normal flex justify-center font-mono'>
+    <div id="projects" className='h-max w-full text-center break-normal flex justify-center font-mono'>
       <div className='flex justify-center w-full h-full'>
         <div className='py-18'>
           <h1 className='text-4xl font-bold pb-4 md:uppercase text-gray-900'>Projects.</h1>

@@ -1,9 +1,13 @@
 import React from 'react'
 import experiences from '../../public/data/experiences.json'
 
+export const metadata = {
+  title: "Experiences"
+}
+
 const Experiences = () => {
   return (
-    <div className='w-full h-max text-center break-normal flex justify-center font-mono text-gray-800'>
+    <div id="experiences" className='w-full h-max text-center break-normal flex justify-center font-mono text-gray-800'>
       <div className='flex justify-center w-full h-full'> 
           <div className='py-24'>
             <div>

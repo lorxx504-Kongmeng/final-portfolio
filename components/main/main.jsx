@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Main = () => {
   return (
-    <div className='w-full h-screen text-center break-normal font-mono'>
+    <div id="home" className='w-full h-screen text-center break-normal font-mono'>
         <div className='w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div className='p-2 max-w-[1000px] md:pl-24'>
                 <div className='md:flex md:justify-start md:pl-10 text-2xl flex pl-14 text-gray-600 md:text-start'>                
@@ -29,14 +29,14 @@ const Main = () => {
                     </div>
                 </div>
                 <div className='flex items-center justify-start max-w-[330px] md:max-w-[800px] m-auto py-4'>
-                    <div className="rounded-full shadow-lg shadow-gray-600 p-8 cursor-pointer hover:scale-90">
-                        <Link href="https://www.linkedin.com/in/kongmengl" target="_blank"><FaLinkedin/></Link>
+                    <div className="rounded-full shadow-lg shadow-gray-600 p-8 cursor-pointer">
+                        <Link href="https://www.linkedin.com/in/kongmengl" target="_blank"><FaLinkedin className='hover:scale-90'/></Link>
                     </div>
-                    <div className="rounded-full shadow-lg shadow-gray-600 p-8 cursor-pointer hover:scale-90 ml-4">
-                        <Link href="https://github.com/lorxx504-Kongmeng" target='_blank'><FaGithub /></Link>
+                    <div className="rounded-full shadow-lg shadow-gray-600 p-8 cursor-pointer ml-4">
+                        <Link href="https://github.com/lorxx504-Kongmeng" target='_blank'><FaGithub className='hover:scale-90'/></Link>
                     </div>   
-                    <div className='rounded-full shadow-lg shadow-gray-600 p-8 cursor-pointer hover:scale-90 ml-4'>
-                        <Link href="/"><IoIosPaper/></Link>
+                    <div className='rounded-full shadow-lg shadow-gray-600 p-8 cursor-pointer ml-4'>
+                        <Link href="https://lorxx504-kongmeng.github.io/resume/Kongmeng-Lor-2023-Resume.pdf" target='_blank'><IoIosPaper className='hover:scale-90'/></Link>
                     </div> 
                 </div>
             </div>

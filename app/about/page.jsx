@@ -3,6 +3,11 @@ import Image from 'next/image'
 import { IoBusinessSharp, IoSchoolSharp, IoLocation, IoDocument } from "react-icons/io5";
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import Link from 'next/link';
+import Head from 'next/head';
+
+export const metadata = {
+    title: "About"
+}
 
 const About = () => {
     const languages = [
@@ -12,7 +17,11 @@ const About = () => {
         "Angular", "Spring Boot", "Next.js", "React", "Firebase", "Node.js", "Tailwind CSS"
     ]
   return (
-    <div className='w-full h-max text-center break-normal flex justify-center font-mono'>
+    <>
+    <Head>
+        <title>About | developedbyKongmengLor</title>
+    </Head>
+    <div id="about" className='w-full h-max text-center break-normal flex justify-center font-mono'>
         <div className='p-2 max-w-[1300px] flex justify-center w-full h-full'> 
             <div className='py-24 flex'>
                 <div className='px-2'>
@@ -106,11 +115,11 @@ const About = () => {
                     <Image src="/profile/headshot.png" width={2000} height={100} className='p-4 ml-5 cursor-pointer hover:shadow-gray-800'></Image>
                     <div className='flex justify-center'>
                         <div className='flex items-center justify-start max-w-[330px] md:max-w-[800px] m-auto py-4'>
-                        <div className="rounded-xl shadow-lg shadow-gray-600 p-8 cursor-pointer hover:scale-90">
-                            <Link href="https://www.linkedin.com/in/kongmengl" target="_blank"><FaLinkedin/></Link>
+                        <div className="rounded-xl shadow-lg shadow-gray-600 p-8 cursor-pointer ">
+                            <Link href="https://www.linkedin.com/in/kongmengl" target="_blank"><FaLinkedin size={25} className='hover:scale-90'/></Link>
                         </div>
-                        <div className="rounded-xl shadow-lg shadow-gray-600 p-8 cursor-pointer hover:scale-90 ml-4">
-                            <Link href="https://github.com/lorxx504-Kongmeng" target='_blank'><FaGithub /></Link>
+                        <div className="rounded-xl shadow-lg shadow-gray-600 p-8 cursor-pointer ml-4">
+                            <Link href="https://github.com/lorxx504-Kongmeng" target='_blank'><FaGithub size={25} className='hover:scale-90'/></Link>
                         </div>   
                     </div>
                     
@@ -125,6 +134,7 @@ const About = () => {
             </div>
         </div>
     </div>
+    </>
   )
 }
 
