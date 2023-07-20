@@ -12,24 +12,21 @@ const About = () => {
         "Angular", "Spring Boot", "Next.js", "React", "Firebase", "Node.js", "Tailwind CSS"
     ]
   return (
-    <div className='w-full h-max text-center break-normal flex justify-center'>
+    <div className='w-full h-max text-center break-normal flex justify-center font-mono'>
         <div className='p-2 max-w-[1300px] flex justify-center w-full h-full'> 
             <div className='py-24 flex'>
                 <div className='px-2'>
-                    <div className='shadow-2xl rounded-2xl p-6'>
+                    <div className='shadow-2xl rounded-2xl p-8'>
                         <div className='md:flex md:justify-start'>
                             <h1 className='text-4xl  md:text-5xl md:font-extrabold'>About Me.</h1>
                         </div>
-                        {/* <div className='md:flex md:justify-start md:text-start'>
-                            <h2 className='text-6xl mt-2 md:font-bold italic'>Who I am.</h2>
-                        </div> */}
-                        <div className='md:flex md:justify-start md:mt-4 md:text-start flex justify-center'>
+                        <div className='md:flex md:justify-start mt-4 md:text-start flex justify-center p-6'>
                             <p className='mt-2 text-base md:text-based md:leading-normal'>Hello, my name is Kongmeng Lor and I am a Full Stack Engineer hailing from Minnesota. I hold a Bachelor's degree in Information Technology Infrastructure of Data Management from the University of Minnesota, Twin Cities, supplemented by a minor in Computer Science. In addition, I have successfully completed the York Solution B2E Full Stack Software Engineer Bootcamp. As I advance in my software development career, I am continuously enhancing my skills and knowledge. If you have any job openings or opportunities available, I would greatly appreciate the chance to connect with you.</p>
                         </div>
                     
                     <Image src="/profile/headshot.png" width={1000} height={100} className='md:p-4 md:ml-5 md:hidden'></Image>
                     <div className='md:hidden'>
-                        <div className='flex justify-center'>
+                        <div className='flex justify-center p-8'>
                             <IoSchoolSharp className='mt-1'></IoSchoolSharp>
                             <h1 className='ml-1 text-start'>Information Technology Infrastructure & Computer Science Minor</h1>
                         </div>
@@ -89,14 +86,14 @@ const About = () => {
                             <div className='flex'>
                                 <div className='flex'>
                                     {languages.map((item) => {
-                                        return <div className='mr-2 bg-black rounded-lg px-3 py-1 text-white cursor-pointer'>{item}</div>
+                                        return <div className='mr-2 bg-gray-600 rounded-lg px-3 py-1 text-white cursor-pointer'>{item}</div>
                                     })}
                                 </div>
                             </div>
                             <div className='flex mt-5'>
                                 <div className='flex'>
                                     {frameworks.map((item) => {
-                                        return <div className='mr-2 bg-black rounded-lg px-3 py-1 text-white cursor-pointer hover:scale-90'>{item}</div>
+                                        return <div className='mr-2 bg-gray-600 rounded-lg px-3 py-1 text-white cursor-pointer hover:scale-90'>{item}</div>
                                     })}
                                 </div>
                             </div>

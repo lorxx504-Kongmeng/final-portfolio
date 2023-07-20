@@ -9,10 +9,10 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   }
   return (
-    <nav className='fixed w-full h-20 shadow-xl z-[10] top-0 left-0 bg-black text-white'>
+    <nav className='fixed w-full h-20 shadow-xl z-[10] top-0 left-0 bg-black text-white font-mono'>
       <div className='flex justify-between items-center h-full w-full px-2'>
         <div className='p-4'>
-          <Link href="/"><h1 className='hover:font-bold hover:border-b text-xl hover:shadow'>developedbyKongmengLor</h1></Link>
+          <Link href="/"><h1 className='hover:font-bold hover:border-b text-2xl hover:shadow'>developedbyKongmengLor</h1></Link>
         </div>
         <div className='p-4'>
           <ul className='hidden md:flex'>

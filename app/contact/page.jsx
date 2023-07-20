@@ -1,12 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin} from 'react-icons/fa';
+import {IoIosPaper} from 'react-icons/io'
 
 const Contact = () => {
   return (
     <div className='h-max w-full bg-slate-800 text-white text-center break-normal flex flex-col'>
       
-      <div className='flex justify-center py-24 w-full h-full mx-auto'>
+      <div className='flex justify-center py-24 w-full h-full mx-auto font-sans'>
         <div>
           <h1 className='text-4xl font-extrabold'>Get In Touch.</h1>
           <div className='flex justify-center w-[22rem] mt-6'>
@@ -14,8 +15,9 @@ const Contact = () => {
           </div>
           
           <div className='mt-4'>
-            <div className='shadow-xl rounded bg-white px-2 py-1 text-black' >
+            <div className='shadow-xl rounded bg-white px-2 py-1 text-black flex justify-center' >
                 <Link href="/">Resume</Link>
+                <IoIosPaper size={18} className='mt-1'/>
             </div>
             <div className='flex mt-4 justify-center bg-white text-black shadow-xl rounded px-2 py-1'>
               <Link href="/">Linkedin</Link>
