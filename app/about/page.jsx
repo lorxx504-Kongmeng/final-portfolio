@@ -1,141 +1,65 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from 'next/image';
 import { IoBusinessSharp, IoSchoolSharp, IoLocation, IoDocument } from "react-icons/io5";
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import Link from 'next/link';
-import Head from 'next/head';
+import { SiTypescript, SiJavascript, SiAngular, SiReact, SiNextdotjs, SiSpring, SiFirebase } from "react-icons/si";
+import { DiJava, DiPython, DiPostgresql,  } from "react-icons/di";
+import {FaJava} from "react-icons/fa"
 
-export const metadata = {
-    title: "About"
-}
 
 const About = () => {
-    const languages = [
-        "Typescript", "Javascript", "Java", "Python","C/C++"
-    ]
-    const frameworks = [
-        "Angular", "Spring Boot", "Next.js", "React", "Firebase", "Node.js", "Tailwind CSS"
-    ]
   return (
-    <>
-    <Head>
-        <title>About | developedbyKongmengLor</title>
-    </Head>
-    <div id="about" className='w-full h-max text-center break-normal flex justify-center font-mono'>
-        <div className='p-2 max-w-[1300px] flex justify-center w-full h-full'> 
-            <div className='py-24 flex'>
-                <div className='px-2'>
-                    <div className='shadow-2xl rounded-2xl p-8'>
-                        <div className='md:flex md:justify-start'>
-                            <h1 className='text-4xl  md:text-5xl md:font-extrabold'>About Me.</h1>
-                        </div>
-                        <div className='md:flex md:justify-start mt-4 md:text-start flex justify-center p-6'>
-                            <p className='mt-2 text-base md:text-based md:leading-normal'>Hello, my name is Kongmeng Lor and I am a Full Stack Engineer hailing from Minnesota. I hold a Bachelor's degree in Information Technology Infrastructure of Data Management from the University of Minnesota, Twin Cities, supplemented by a minor in Computer Science. In addition, I have successfully completed the York Solution B2E Full Stack Software Engineer Bootcamp. As I advance in my software development career, I am continuously enhancing my skills and knowledge. If you have any job openings or opportunities available, I would greatly appreciate the chance to connect with you.</p>
-                        </div>
-                    
-                    <Image src="/profile/headshot.png" width={1000} height={100} alt="profile"className='md:p-4 md:ml-5 md:hidden'></Image>
-                    <div className='md:hidden'>
-                        <div className='flex justify-center p-8'>
-                            <IoSchoolSharp className='mt-1'></IoSchoolSharp>
-                            <h1 className='ml-1 text-start'>Information Technology Infrastructure & Computer Science Minor</h1>
-                        </div>
-                        <div className='flex justify-center text-start'>
-                            <IoBusinessSharp className='mt-1'></IoBusinessSharp>
-                            <h1 className='ml-1'>University of Minnesota, Twin Cities</h1>
-                        </div>
-                        <div className='flex justify-center'>
-                            <IoDocument className='mt-1'></IoDocument>
-                            <h1 className='ml-1'>York Solutions B2E Full Stack Software Engineer Bootcamp</h1>
-                        </div>
-                        <div className='flex justify-center'>
-                            <IoLocation className='mt-1'></IoLocation>
-                            <h1 className='ml-2'>Minneapolis, MN</h1>
-                        </div>
-                    </div>  
-                    <div className='md:hidden'>
-                        <div className='mt-2'>
-                            <div className='flex justify-center mt-2'>
-                                {languages.map((item, id) => {
-                                    return <div key={id} className='ml-2 bg-slate-600 rounded-lg px-1 py-2 text-white cursor-pointer'>{item}</div>
-                                })}
-                            </div>
-                        </div>
-                        <div className='mt-2'>
-                            <div className='flex mt-2 justify-center'>
-                                {frameworks.map((item, id) => {
-                                    return <div key={id} className='ml-1 bg-slate-600 rounded-lg px-1 py-2 text-white cursor-pointer'>{item}</div>
-                                })}
-                            </div>
-                        </div>
-                    </div>
-
-                    
-
-                    <div className='hidden md:block'>
-                        <div className='flex mt-5'>
-                            <IoSchoolSharp size={30}></IoSchoolSharp>
-                            <h1 className='ml-2 mt-1'>Information Technology Infrastructure & Computer Science Minor</h1>
-                        <h1></h1>
-                        </div>
-                        <div className='flex mt-2'>
-                            <IoBusinessSharp size={30}></IoBusinessSharp>
-                            <h1 className='ml-2 mt-2'>University of Minnesota, Twin Cities</h1>
-                        </div>
-                            <div className='flex mt-2'>
-                            <IoDocument size={30}></IoDocument>
-                        <h1 className='ml-2 mt-2'>York Solutions B2E Full Stack Software Engineer Bootcamp</h1>
-                        </div>
-                            <div className='flex mt-2'>
-                            <IoLocation size={30}></IoLocation>
-                        <h1 className='ml-2 mt-1'>Minneapolis, MN</h1>
-                        </div>
-                    </div>
-                    <div className='hidden md:block'>
-                        <div className='mt-4'>
-                            <div className='flex'>
-                                <div className='flex'>
-                                    {languages.map((item, id) => {
-                                        return <div key={id} className='mr-2 bg-gray-600 rounded-lg px-3 py-1 text-white cursor-pointer'>{item}</div>
-                                    })}
-                                </div>
-                            </div>
-                            <div className='flex mt-5'>
-                                <div className='flex'>
-                                    {frameworks.map((item, id) => {
-                                        return <div key={id} className='mr-2 bg-gray-600 rounded-lg px-3 py-1 text-white cursor-pointer hover:scale-90'>{item}</div>
-                                    })}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    </div>
-                </div>
-                <div className='hidden md:block shadow-2xl '>
-                    <Image src="/profile/headshot.png" alt='profile' width={2000} height={100} className='p-4 ml-5 cursor-pointer hover:shadow-gray-800'></Image>
-                    <div className='flex justify-center'>
-                        <div className='flex items-center justify-start max-w-[330px] md:max-w-[800px] m-auto py-4'>
-                        <div className="rounded-xl shadow-lg shadow-gray-600 p-8 cursor-pointer ">
-                            <Link href="https://www.linkedin.com/in/kongmengl" target="_blank"><FaLinkedin size={25} className='hover:scale-90'/></Link>
-                        </div>
-                        <div className="rounded-xl shadow-lg shadow-gray-600 p-8 cursor-pointer ml-4">
-                            <Link href="https://github.com/lorxx504-Kongmeng" target='_blank'><FaGithub size={25} className='hover:scale-90'/></Link>
-                        </div>   
-                    </div>
-                    
-                    </div>
-                </div>
-                <div className='hidden md:block'>
-                    
-                </div>
-            </div>
+    <div className='h-max border w-full text-center break-normal font-mono py-20'>
+        <div className='border p-4'>
+            <h1 className='text-3xl m-4 border font-extrabold text-start'>About Me.</h1>
+        </div>
+        <div className='w-full h-full mx-auto p-2'>
             <div>
-
+                <Image src="/profile/profile.png" width={450} height={300} className='shadow-2lg rounded max-w-full h-auto align-middle border m-4' />
+                <div className='border'>
+                    <h1 className='border p-1 text-2xl'>Welcome to my page!</h1>
+                    <h1 className='border m-4 text-start'>My name is Kongmeng Lor and I am a Full Stack Engineer hailing from Minnesota. </h1>
+                    <h1 className='border m-4 text-start'>I hold a Bachelor's degree in Information Technology Infrastructure of Data Management from the University of Minnesota, Twin Cities, supplemented by a minor in Computer Science.</h1>
+                    <h1 className='border m-4 text-start'>As I advance in my software development career, I am continuously enhancing my skills and knowledge.</h1>
+                    <h1 className='border m-4 text-start'>If you have any job openings or opportunities available, I would greatly appreciate the chance to connect with you.</h1>
+                    <h1 className='border text-start p-1 m-4'> In addition, I have successfully completed the York Solution B2E Full Stack Software Engineer Bootcamp.</h1>
+                    <div className='border flex'>
+                        <IoSchoolSharp size={25} className='border ml-4'/>
+                        <div className='text-light font-extralight text-start ml-2'>
+                            <h1>Information Technology Infrastructure Data Management Bachelor's Degree </h1>
+                            <h1> & Computer Science Minor</h1>
+                        </div>
+                    </div>
+                    <div className='border flex'>
+                        <IoBusinessSharp className='border ml-4' size={16}/>
+                        <h1 className='text-light font-extralight text-start ml-2'>University of Minnesota, Twin Cities</h1>
+                    </div>
+                    <div className='flex'>
+                        <IoDocument size={18} className='ml-4'/>
+                        <h1 className='text-light font-extralight text-start ml-2'>York Solutions B2E Full Stack Software Engineer Bootcamp Certificate</h1>
+                    </div>
+                    <div className='flex mt-2 justify-center'>
+                        <div className='flex'>
+                            <h1 className='mr-2 rounded border bg-slate-800 text-white p-1'> <SiTypescript/> Typescript</h1>
+                            <h1 className='mr-2 rounded border bg-slate-800 text-white p-1'> <SiJavascript />Javascipt</h1>
+                            <h1 className='mr-2 rounded border bg-slate-800 text-white p-1'> <FaJava/>Java</h1>
+                            <h1 className='mr-2 rounded border bg-slate-800 text-white p-1'> <DiPython />Python</h1>
+                            <h1 className='mr-2 rounded border bg-slate-800 text-white p-1'>C/C++</h1>
+                        </div>
+                    </div>
+                    <div className='flex mt-2 justify-center'>
+                        <div className='flex'>
+                            <h1 className='mr-2 rounded border bg-slate-800 text-white p-1'> <SiAngular />Angular</h1>
+                            <h1 className='mr-2 rounded border bg-slate-800 text-white p-1'> <SiSpring />Spring Boot</h1>
+                            <h1 className='mr-2 rounded border bg-slate-800 text-white p-1'> <SiNextdotjs /> Next.js</h1>
+                            <h1 className='mr-2 rounded border bg-slate-800 text-white p-1'> <SiReact />React.js</h1>
+                            <h1 className='mr-2 rounded border bg-slate-800 text-white p-1'> <SiFirebase />Firebase</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
-    </>
   )
 }
-
-export default About
+export default About;
