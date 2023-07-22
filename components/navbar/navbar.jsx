@@ -2,50 +2,58 @@
 import Link from 'next/link';
 import React, { useState } from 'react'
 import {AiOutlineClose, AiOutlineMenu, AiOutlineLinkedin, AiOutlineGithub} from 'react-icons/ai'
+import Footer from '../footer/footer';
+import Image from 'next/image';
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const handleNav = () => {
-    setMenuOpen(!menuOpen);
+  const [nav, setNav] = useState(false);
+  const handle = () => {
+    setNav(!nav);
   }
+
+
+
   return (
-    <nav className='fixed w-full h-20 shadow-xl z-[10] top-0 left-0 bg-black text-white font-mono'>
-      <div className='flex justify-between items-center h-full w-full px-2'>
-        <div className='p-4'>
-          <Link href="/#home"><h1 className='hover:font-bold hover:border-b text-2xl hover:shadow'>developedbyKongmengLor</h1></Link>
+    <nav className='fixed w-full h-20 shadow-xl top-0 left-0 bg-black text-white font-mono'>
+      <div className='flex justify-between items-center h-full w-full px-8'>
+        <div className='hover:underline text-xl'>
+            <Link href="/"><h1>KLDeveloper</h1></Link>
         </div>
-        <div className='p-4'>
-          <ul className='hidden md:flex'>
-            <Link href="/#about"><li className='ml-10 uppercase text-xl hover:font-bold '>About</li></Link>
-            <Link href="/#experiences"><li className='ml-10 uppercase text-xl hover:font-bold'>Experinces</li></Link>
-            <Link href="/#projects"><li className='ml-10 uppercase text-xl hover:font-bold'>Project</li></Link>
-            <Link href="/#contact"><li className='ml-10 uppercase text-xl hover:font-bold'>Contact</li></Link>
-          </ul>
-        </div>
-        <div onClick={handleNav } className='md:hidden cursor-pointer pl-24'>
-          <AiOutlineMenu size={25} className='hover:shadow-xl hover:scale-90'/>
-        </div>
-        <div className={menuOpen ? "fixed left-0 top-0 w-[65%] m:hidden h-screen p-10 ease-in duration-500 bg-black" : "fixed left-[-100%] top-0 p-10 ease-in duartion-500" }>
-          <div className='flex w-full items-center justify-end'>
-            <div onClick={handleNav} className='cursor-pointer rounded-full shadow-lg shadow-gray-700 p-2'>
-              <AiOutlineClose size={25} className='hover:scale-90'></AiOutlineClose>
-            </div>
+        <div className=''>
+          <div className={nav ? 'fixed bg-black left-0 top-0 w-[75%] h-full overflow-auto ease-in duartion-800 whitespace-nowrap flex flex-col justify-between' : "fixed left-[-100%] top-0 p-10 ease-in duartion-500"} >
+              <div>
+                <div className='flex w-full items-center justify-between border p-10'>
+                  <div>
+                    <h1 className='text-light'>KongmengLorDev</h1>
+                  </div>
+                  <div className='shadow-2xl rounded-full' onClick={handle}>
+                    <AiOutlineClose className='cursor-pointer hover:scale-75'/>
+                  </div>
+                </div>
+                <div className='text-white border p-10 m-10'>
+                  <Link href="/" onClick={handle}><h1 className='border p-4 m-4 hover:scale-95 text-xl'>Home</h1></Link> 
+                  <Link href="/" onClick={handle}><h1 className='border p-4 m-4 hover:scale-95 text-xl'>About</h1></Link> 
+                  <Link href="/" onClick={handle}><h1 className='border p-4 m-4 hover:scale-95 text-xl'>Experiences</h1></Link> 
+                  <Link href="/" onClick={handle}><h1 className='border p-4 m-4 hover:scale-95 text-xl'>Projects</h1></Link> 
+                  <Link href="/" onClick={handle}><h1 className='border p-4 m-4 hover:scale-95 text-xl'>Contact</h1></Link> 
+                  <div className='border p-4 m-4 flex justify-between'>
+                    <Link href="/"><AiOutlineLinkedin size={40} className='hover:scale-75'/></Link> 
+                    <Link href="/"><AiOutlineGithub size={40} className='hover:scale-75'/></Link> 
+                  </div>
+                  <Link href="/"><h1 className='border p-4 m-4 hover:scale-95 text-center text-xl'>Resume</h1></Link> 
+                </div>
+              </div>
+              <Footer />
+
           </div>
-          <div className='w-full items-center'>
-            <ul className='pt-10'>
-              <Link href="/" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Home</li></Link>
-              <Link href="/#about" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>About</li></Link>
-              <Link href="/#experiences" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Experinces</li></Link>
-              <Link href="/#projects" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Project</li></Link>
-              <Link href="/#contact" onClick={handleNav}><li className='mt-10 uppercase hover:border-b text-xl hover:font-bold'>Contact</li></Link>
-            </ul>
-          </div>
-          <div className='flex pt-10 items-center'>
-            <a href='https://www.linkedin.com/in/kongmengl/' target='_blank'><AiOutlineLinkedin size={30} className='mr-2 cursor-pointer hover:scale-90' ></AiOutlineLinkedin></a> 
-            <a href='https://github.com/lorxx504-Kongmeng' target='_blank'><AiOutlineGithub size={30} className='ml-2 cursor-pointer hover:scale-90'></AiOutlineGithub></a>
+          <div onClick={handle}>
+            <AiOutlineMenu className='hover:scale-75 cursor-pointer'/>
           </div>
         </div>
+
       </div>
+      {/* This will be a openNav. */}
+
     </nav>
   )
 }
