@@ -7,30 +7,30 @@ import projects from "../../public/data/projects.json"
 
 const Projects = () => {
   return (
-    <div className='h-max border w-full text-center break-normal font-mono py-20 flex flex-col justify-around'>
+    <div className='h-max w-full text-center break-normal font-mono py-20 flex flex-col justify-around'>
       <div>
         <div className='flex justify-center'>
           <div>
-            <div>
+            <div className='mt-6'>
               <h1 className='text-4xl'>Projects</h1>
             </div>
-            <div className='w-full h-full mx-auto p-2 border'>
-              <div className='border p-2 m-2'>
+            <div className='w-full h-full mx-auto p-2'>
+              <div className='p-2 m-2'>
                 {
                   projects.map((item) => {
                     return <div>
                     <Image src={item.image} width={400} height={0} />
-                    <div className='border text-start'>
+                    <div className=' text-start'>
                     <h1 className='text-xl mt-2 font-bold'>{item.title}</h1>
                     <h1 className='mt-2'>{item.description}</h1>
                     <div className='flex mt-4 text-white justify-center'>
-                      <div className='flex'>
+                      <div className='flex p-2'>
                         {item.languages.map((item) => {
-                          return <p className='border p-1 bg-black'>{item}</p>
+                          return <p className='p-1 bg-black m-1'>{item}</p>
                         })}
                       </div>
                     </div>
-                    <div className='flex justify-center border mt-4 p-2 m-2 bg-black'>
+                    <div className='flex justify-center mt-4 p-2 m-2 bg-black'>
                       <Link href={item.github} target='_blank' className='shadow-2xl rounded text-white '>< FaGithub size={35} className='hover:scale-75'/></Link>
                     </div>
                     </div>
@@ -41,8 +41,8 @@ const Projects = () => {
             </div>
             
           </div>
-          <div className='border p-2 m-2'>
-            <h1 className='border m-2'>More Projects On My Github</h1>
+          <div className='p-2 m-2'>
+            <h1 className='m-2'>More Projects On My Github</h1>
             <div className='flex justify-center '>
                 <Link href="https://github.com/lorxx504-Kongmeng" target='_blank'><FaGithub size={35} className='hover:scale-75'/></Link> 
             </div>
