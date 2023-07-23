@@ -37,11 +37,11 @@ const Navbar = () => {
                   <Link href="/experiences" onClick={handle}><h1 className='p-4 m-4 hover:scale-95 text-xl' target='_blank'>Experiences</h1></Link> 
                   <Link href="/projects" onClick={handle}><h1 className='p-4 m-4 hover:scale-95 text-xl' target='_blank'>Projects</h1></Link> 
                   <Link href="/contact" onClick={handle}><h1 className='p-4 m-4 hover:scale-95 text-xl' target='_blank'>Contact</h1></Link> 
-                  <Link href="https://lorxx504-kongmeng.github.io/resume/Kongmeng-Lor-2023-Resume.pdf" target='_blank'><h1 className='p-4 m-4 hover:scale-95 text-start text-xl'>Resume</h1></Link> 
+                  {/* <Link href="https://lorxx504-kongmeng.github.io/resume/Kongmeng-Lor-2023-Resume.pdf" target='_blank'><h1 className='p-4 m-4 hover:scale-95 text-start text-xl'>Resume</h1></Link> 
                   <div className='p-4 m-4 flex justify-between'>
                     <Link href='https://www.linkedin.com/in/kongmengl/' target='_blank'><AiOutlineLinkedin size={40} className='hover:scale-75'/></Link> 
                     <Link href='https://github.com/lorxx504-Kongmeng' target='_blank'><AiOutlineGithub size={40} className='hover:scale-75'/></Link> 
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <Footer />

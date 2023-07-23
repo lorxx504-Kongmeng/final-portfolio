@@ -9,8 +9,9 @@ import {FaJava} from "react-icons/fa"
 const About = () => {
   return (
     <div className='h-max w-full text-center break-normal font-mono py-20'>
-        <div className='p-4'>
+        <div className='p-4 flex'>
             <heading className='text-4xl'>About</heading>
+            <heading className="text-4xl ml-4 font-extrabold">Me.</heading>
         </div>
         <div className='w-full h-full mx-auto p-2'>
             <div>
