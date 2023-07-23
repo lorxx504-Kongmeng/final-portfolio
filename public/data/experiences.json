@@ -7,12 +7,9 @@
       "date": "January 2023 - June 2023",
       "description": "During my time at Optum, as a full stack software engineer, I had the opportunity to work on developing UI components and backend services for healthcare industry applications. For example, designing and implementing intuitive user interface components using Angular, ensuring a seamless and responsive user experience. These components might have included forms for data entry, interactive charts and graphs for data visualization, and reusable UI elements for consistent design across the application. As well as developing robust backend services using Spring Boot to handle data processing, business logic and integration. This involved designing and implementing RESTful APIs.",
       "skills": [
-        "Typescript",
-        "Java",
-        "Angular",
-        "Spring Boot",
-        "Graphql",
-        "Jenkins"
+        "Angular / Typescript / Javascipt",
+        "Spring Boot / Java",
+        "Graphql / Jenkins / Github"
       ]
     },
     {
@@ -23,10 +20,8 @@
       "date": "January 2020 - November 2021",
       "description": "At this position, my primary responsibility is to provide technical support and troubleshooting assistance to end-users. This includes diagnosing and resolving hardware and software issues, identifying network problems, and addressing any other technical difficulties encountered by users. I am also responsible for installing, configuring, and upgrading computer hardware, software, and operating systems. I also set up new computers, install required software applications, and ensure that all systems are properly configured and functional. All of the end-users are the university's faculty, staff, and students.",
       "skills": [
-        "Software Applications",
-        "Active Directory",
-        "Operating Systems",
-        "Networking Basics"
+        "Software Applications / Active Directory",
+        "Operating Systems / Networking Basics"
       ]
     },
     {

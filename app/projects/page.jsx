@@ -12,21 +12,21 @@ const Projects = () => {
         <div className='flex justify-center'>
           <div>
             <div className='mt-6'>
-              <heading className='text-4xl font-extrabold'>Projects</heading>
+              <heading className='text-4xl font-extrabold'>Projects.</heading>
             </div>
             <div className='w-full h-full mx-auto p-2'>
               <div className='p-2 m-2'>
                 {
-                  projects.map((item) => {
-                    return <div className='mt-4'>
+                  projects.map((item, key) => {
+                    return <div key={key} className='mt-4'>
                     <Image src={item.image} width={400} height={0} />
                     <div className='text-start'>
                     <h1 className='text-xl mt-2 font-bold'>{item.title}</h1>
                     <h1 className='mt-2'>{item.description}</h1>
                     <div className='flex mt-4 text-white justify-center'>
                       <div className='flex p-2'>
-                        {item.languages.map((item) => {
-                          return <p className='p-1 bg-black m-1 text-base'>{item}</p>
+                        {item.languages.map((item, key) => {
+                          return <p key={key} className='p-1 bg-black m-1 text-base'>{item}</p>
                         })}
                       </div>
                     </div>

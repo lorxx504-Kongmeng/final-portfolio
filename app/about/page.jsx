@@ -22,7 +22,7 @@ const About = () => {
                     <h1 className='m-4 text-start'>I hold a Bachelor's degree in Information Technology Infrastructure of Data Management from the University of Minnesota, Twin Cities, supplemented by a minor in Computer Science.</h1>
                     <h1 className='m-4 text-start'>As I advance in my software development career, I am continuously enhancing my skills and knowledge.</h1>
                     <h1 className='m-4 text-start'>If you have any job openings or opportunities available, I would greatly appreciate the chance to connect with you.</h1>
-                    <h1 className='text-start p-1 m-4'> In addition, I have successfully completed the York Solution B2E Full Stack Software Engineer Bootcamp.</h1>
+                    <h1 className='text-start p-1 m-4'> I also have successfully completed the York Solution B2E Full Stack Software Engineer Bootcamp as well.</h1>
                     <div className='flex'>
                         <IoSchoolSharp size={25} className='ml-4'/>
                         <div className='text-light font-extralight text-start ml-2'>
