@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className='h-max border w-full text-center break-normal font-mono py-20'>
         <div className='border p-4'>
-            <h1 className='text-3xl m-4 border font-extrabold text-start'>About Me.</h1>
+            <h1 className='text-4xl border'>About</h1>
         </div>
         <div className='w-full h-full mx-auto p-2'>
             <div>
@@ -48,7 +48,7 @@ const About = () => {
                     </div>
                     <div className='flex mt-2 justify-center'>
                         <div className='flex'>
-                            <h1 className='mr-2 rounded border bg-slate-800 text-white p-1'> <SiAngular />Angular</h1>
+                            <h1 className='mr-2 rounded border bg-slate-800 text-white text-light'> <SiAngular />Angular</h1>
                             <h1 className='mr-2 rounded border bg-slate-800 text-white p-1'> <SiSpring />Spring Boot</h1>
                             <h1 className='mr-2 rounded border bg-slate-800 text-white p-1'> <SiNextdotjs /> Next.js</h1>
                             <h1 className='mr-2 rounded border bg-slate-800 text-white p-1'> <SiReact />React.js</h1>

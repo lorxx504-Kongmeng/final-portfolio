@@ -5,6 +5,7 @@ import {AiOutlineClose, AiOutlineMenu, AiOutlineLinkedin, AiOutlineGithub} from 
 import Footer from '../footer/footer';
 import Image from 'next/image';
 
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handle = () => {
@@ -17,7 +18,7 @@ const Navbar = () => {
     <nav className='fixed w-full h-20 shadow-xl top-0 left-0 bg-black text-white font-mono'>
       <div className='flex justify-between items-center h-full w-full px-8'>
         <div className='hover:underline text-xl'>
-            <Link href="/"><h1>KLDeveloper</h1></Link>
+            <Link href="/"><h1>KongmengLorDev</h1></Link>
         </div>
         <div className=''>
           <div className={nav ? 'fixed bg-black left-0 top-0 w-[75%] h-full overflow-auto ease-in duartion-800 whitespace-nowrap flex flex-col justify-between' : "fixed left-[-100%] top-0 p-10 ease-in duartion-500"} >
@@ -32,9 +33,9 @@ const Navbar = () => {
                 </div>
                 <div className='text-white border p-10 m-10'>
                   <Link href="/" onClick={handle}><h1 className='border p-4 m-4 hover:scale-95 text-xl'>Home</h1></Link> 
-                  <Link href="/" onClick={handle}><h1 className='border p-4 m-4 hover:scale-95 text-xl'>About</h1></Link> 
+                  <Link href="/about" onClick={handle}><h1 className='border p-4 m-4 hover:scale-95 text-xl'>About</h1></Link> 
                   <Link href="/" onClick={handle}><h1 className='border p-4 m-4 hover:scale-95 text-xl'>Experiences</h1></Link> 
-                  <Link href="/" onClick={handle}><h1 className='border p-4 m-4 hover:scale-95 text-xl'>Projects</h1></Link> 
+                  <Link href="/projects" onClick={handle}><h1 className='border p-4 m-4 hover:scale-95 text-xl'>Projects</h1></Link> 
                   <Link href="/" onClick={handle}><h1 className='border p-4 m-4 hover:scale-95 text-xl'>Contact</h1></Link> 
                   <div className='border p-4 m-4 flex justify-between'>
                     <Link href="/"><AiOutlineLinkedin size={40} className='hover:scale-75'/></Link> 

@@ -25,9 +25,9 @@ const Main = () => {
                 </h1>
             </div>
             <div className='border flex'>
-                <Link href="/" className='mr-2 border m-4 hover:scale-75'><FaLinkedin size={45} /> </Link>
-                <Link href="/" className='mr-2 border m-4 hover:scale-75'><FaGithub size={45} /></Link>
-                <Link href="/" className='mr-2 border m-4 hover:scale-75'><IoIosPaper size={45}/></Link>
+                <Link href="https://www.linkedin.com/in/kongmengl/" className='mr-2 border m-4 hover:scale-75' target='_blank'><FaLinkedin size={45} /> </Link>
+                <Link href="https://github.com/lorxx504-Kongmeng" className='mr-2 border m-4 hover:scale-75' target='_blank'><FaGithub size={45} /></Link>
+                <Link href="https://lorxx504-kongmeng.github.io/resume/Kongmeng-Lor-2023-Resume.pdf" className='mr-2 border m-4 hover:scale-75' target='_blank'><IoIosPaper size={45}/></Link>
             </div>
         </div>
     </div>
