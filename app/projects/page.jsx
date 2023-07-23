@@ -12,7 +12,7 @@ const Projects = () => {
         <div className='flex justify-center'>
           <div>
             <div className='mt-6'>
-              <h1 className='text-4xl'>Projects</h1>
+              <heading className='text-4xl'>Projects</heading>
             </div>
             <div className='w-full h-full mx-auto p-2'>
               <div className='p-2 m-2'>

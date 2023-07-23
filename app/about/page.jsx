@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className='h-max w-full text-center break-normal font-mono py-20'>
         <div className='p-4'>
-            <h1 className='text-4xl'>About</h1>
+            <heading className='text-4xl'>About</heading>
         </div>
         <div className='w-full h-full mx-auto p-2'>
             <div>
