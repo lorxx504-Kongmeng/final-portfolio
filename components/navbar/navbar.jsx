@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className='hover:underline text-xl'>
             <Link href="/"><h1>KongmengLorDev</h1></Link>
         </div>
-        <div className=''>
+        <div className='md:hidden'>
           <div className={nav ? 'fixed bg-black left-0 top-0 w-[75%] h-full overflow-auto ease-in duartion-800 whitespace-nowrap flex flex-col justify-between' : "fixed left-[-100%] top-0 p-10 ease-in duartion-500"} >
               <div>
                 <div className='flex w-full items-center justify-between p-10'>
@@ -45,10 +45,17 @@ const Navbar = () => {
                 </div>
               </div>
               <Footer />
-
           </div>
           <div onClick={handle}>
             <AiOutlineMenu className='hover:scale-75 cursor-pointer'/>
+          </div>
+        </div>
+        <div className='hidden md:block'>
+          <div className='text-white flex'>
+                  <Link href="/about" onClick={handle}><h1 className='hover:scale-95 text-xl mr-4' target='_blank'>About</h1></Link> 
+                  <Link href="/experiences" onClick={handle}><h1 className='hover:scale-95 text-xl mr-4' target='_blank'>Experiences</h1></Link> 
+                  <Link href="/projects" onClick={handle}><h1 className='hover:scale-95 text-xl mr-4' target='_blank'>Projects</h1></Link> 
+                  <Link href="/contact" onClick={handle}><h1 className='hover:scale-95 text-xl mr-4' target='_blank'>Contact</h1></Link> 
           </div>
         </div>
 
