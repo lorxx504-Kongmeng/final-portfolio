@@ -13,7 +13,7 @@
         "description": "This project leverages Next.js 13 for development and incorporates Tailwind CSS for styling all the components. Its main functionality revolves around data fetching, specifically retrieving search results from Wikipedia.",
         "github": "https://github.com/lorxx504-Kongmeng/WikiRocket.git",
         "languages": ["Next.js", "Tailwind CSS","Typescript"],
-        "image": "/projects/project3.png"
+        "image": "/projects/project3f.png"
     },
     {
         "id": 1,

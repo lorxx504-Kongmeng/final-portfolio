@@ -1,7 +1,12 @@
 import React from 'react'
 import experiences from '../../public/data/experiences.json'
 
+export const metadata = {
+  title: "Experiences"
+}
+
 const Experiences = () => {
+
   return (
     <div className='h-max w-full text-center break-normal font-mono py-20 flex flex-col justify-around'>
       <div>
@@ -11,19 +16,19 @@ const Experiences = () => {
               <heading className='text-4xl font-bold'>Experiences.</heading>
             </div>
 
-            <div className='py-8 text-start m-4 leading-normal'>
+            <div className='py-8 text-start m-4 leading-normal md:w-[900px]'>
               {
                 experiences.map((item, key) => {
-                  return <div key={key} className='mt-6 p-2 border-r border-b border-l border-t shadow-lg rounded'>
-                      <p className='text-xl font-bold'>{item.title}</p>
-                      <p className='text-xl mt-2'>{item.company}</p>
+                  return <div key={key} className='mt-6 p-6 border-r border-b border-l border-t shadow-lg rounded'>
+                      <p className='md:text-2xl text-xl font-bold'>{item.title}</p>
+                      <p className='text-xl md:font-light mt-2'>{item.company}</p>
                       <p className='mt-2 text-light'>{item.location}</p>
                       <p className='mt-2 text-sm'>{item.date}</p>
                       <p className='mt-4'>{item.description}</p>
-                      <div className='mt-4'>
+                      <div className='mt-6'>
                         {
                           item.skills.map((skill,key) => {
-                            return <p key={key} className='mt-2'>{skill}</p>
+                            return <p key={key} className='mt-2 font-bold'>{skill}</p>
                           })
                         }
                       </div>

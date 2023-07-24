@@ -4,6 +4,9 @@ import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
 import projects from "../../public/data/projects.json"
 
+export const metadata = {
+  title: "Projects"
+}
 
 const Projects = () => {
   return (
@@ -14,32 +17,38 @@ const Projects = () => {
             <div className='mt-6'>
               <heading className='text-4xl font-extrabold'>Projects.</heading>
             </div>
-            <div className='w-full h-full mx-auto p-2'>
+            <div className='w-full h-full mx-auto p-2 md:w-[900px]'>
               <div className='p-2 m-2'>
                 {
                   projects.map((item, key) => {
-                    return <div key={key} className='mt-4'>
-                    <Image src={item.image} width={400} height={0} />
-                    <div className='text-start'>
-                    <h1 className='text-xl mt-2 font-bold'>{item.title}</h1>
-                    <h1 className='mt-2'>{item.description}</h1>
-                    <div className='flex mt-4 text-white justify-center'>
-                      <div className='flex p-2'>
-                        {item.languages.map((item, key) => {
-                          return <p key={key} className='p-1 bg-black m-1 text-base'>{item}</p>
-                        })}
+                    return <div key={key} className='mt-4 md:shadow-xl md:p-4  border-t' >
+                      <div className='flex justify-center mt-5'>
+                        <Image src={item.image} width={500} height={0} />
                       </div>
-                    </div>
-                    <div className='flex justify-center mt-4 p-2 m-2 bg-black'>
-                      <Link href={item.github} target='_blank' className='shadow-2xl rounded text-white '>< FaGithub size={35} className='hover:scale-75'/></Link>
-                    </div>
+
+
+                    <div className='flex justify-center'>
+                      <div className='md:w-[500px] w-[400px] text-start'>
+                      <h1 className='text-xl mt-2 font-bold md:mb-4'>{item.title}</h1>
+                      <h1 className='mt-2 md:mb-4'>{item.description}</h1>
+                      <div className='flex mt-4 text-white justify-center'>
+                        <div className='flex'>
+                          {item.languages.map((item, key) => {
+                            return <p key={key} className='p-1 bg-black m-1 text-base'>{item}</p>
+                          })}
+                        </div>
+                      </div>
+                      <div className='flex justify-center mt-4 p-2 m-2 bg-black'>
+                        <Link href={item.github} target='_blank' className='shadow-xl rounded text-white hover:scale-75'>Github</Link>
+                      </div>
+                    
                     </div>
                   </div>
+                  </div>
                   })}
+                </div>
               </div>
             </div>
-            </div>
-            
           </div>
           <div className='p-2 m-2'>
             <h1 className='m-2'>More Projects On My Github</h1>
@@ -47,8 +56,7 @@ const Projects = () => {
                 <Link href="https://github.com/lorxx504-Kongmeng" target='_blank'><FaGithub size={35} className='hover:scale-75'/></Link> 
             </div>
           </div>
-      </div>
-
+        </div>
     </div>
   )
 }

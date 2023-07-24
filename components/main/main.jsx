@@ -6,21 +6,20 @@ import Link from 'next/link';
 const Main = () => {
   return (
 <div className="w-full h-screen text-center break-normal font-mono">
-    <div className='w-full h-full mx-auto p-2 flex justify-center items-center'>
+    <div className='w-full h-full mx-auto p-2 flex justify-center items-center md:w-[650px]'>
         <div className='p-2 m-2'>
-
             <div className='flex justify-start'>
-                <h1 className='text-2xl m-2 p-2'>
+                <h1 className='text-2xl m-2 p-2 md:text-3xl'>
                     Hello there!
                 </h1>
             </div>
             <div className='m-4'>
-                <h1 className='text-4xl text-start'>
+                <h1 className='text-4xl text-start md:text-5xl'>
                     I'm Kongmeng Lor.
                 </h1>
             </div>
             <div className='flex justify-center'>
-                <h1 className='text-start m-2 p-2 text-light font-light'>
+                <h1 className='text-start m-2 p-2 text-light font-light md:text-xl'>
                     I am a passionate Full Stack Software Engineer actively seeking new opportunities. I have a natural curiosity that drives me to constantly explore and learn new technologies, ensuring that I stay updated and proficient in the ever-evolving tech landscape.
                 </h1>
             </div>
