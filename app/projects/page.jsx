@@ -22,26 +22,25 @@ const Projects = () => {
                 {
                   projects.map((item, key) => {
                     return <div key={key} className='mt-4 md:shadow-xl md:p-4  border-t' >
-                      <div className='flex justify-center mt-5'>
-                        <Image src={item.image} width={500} height={0} />
+                      <div className='flex justify-center mt-5 '>
+                        <Image src={item.image} width="0" height="0" className='h-auto w-[300px]'/>
                       </div>
 
 
-                    <div className='flex justify-center'>
-                      <div className='md:w-[500px] w-[400px] text-start'>
-                      <h1 className='text-xl mt-2 font-bold md:mb-4'>{item.title}</h1>
-                      <h1 className='mt-2 md:mb-4'>{item.description}</h1>
-                      <div className='flex mt-4 text-white justify-center'>
+                    <div className='flex justify-center flex-wrap'>
+                      <div className='md:w-[500px] w-[400px] text-start '>
+                      <h1 className='text-xl mt-2 font-bold md:mb-4 ml-12'>{item.title}</h1>
+                      <h1 className='mt-2 md:mb-4 ml-12'>{item.description}</h1>
+                      <div className='flex mt-4 text-white justify-center flex-warp w-[440px]'>
                         <div className='flex'>
                           {item.languages.map((item, key) => {
                             return <p key={key} className='p-1 bg-black m-1 text-base'>{item}</p>
                           })}
                         </div>
                       </div>
-                      <div className='flex justify-center mt-4 p-2 m-2 bg-black'>
-                        <Link href={item.github} target='_blank' className='shadow-xl rounded text-white hover:scale-75'>Github</Link>
+                      <div className='flex justify-center mt-4 p-2 m-2 bg-black ml-12'>
+                        <Link href={item.github} target='_blank' className='shadow-xl rounded text-white hover:scale-75 px-2'>Github</Link>
                       </div>
-                    
                     </div>
                   </div>
                   </div>

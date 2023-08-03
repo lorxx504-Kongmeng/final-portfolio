@@ -41,26 +41,24 @@ const About = () => {
                         <IoBusinessSharp className='ml-4' size={18}/>
                         <h1 className='text-light font-extralight text-start ml-2'>University of Minnesota, Twin Cities</h1>
                     </div>
-                    <div className='flex mt-2'>
+                    <div className='flex mt-2 '>
                         <IoDocument size={18} className='ml-4'/>
                         <h1 className='text-light font-extralight text-start ml-2'>York Solutions B2E Full Stack Software Engineer Bootcamp Certificate</h1>
                     </div>
-                    <div className='flex mt-2 justify-center mt-10'>
-                        <div className='flex'>
-                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1'> <SiTypescript/> Typescript</h1>
-                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1'> <SiJavascript />Javascipt</h1>
-                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1'> <FaJava/>Java</h1>
-                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1'> <DiPython />Python</h1>
-                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1'>C/C++</h1>
+                    <div className='flex justify-center mt-4 mr-10'>
+                        <div className='flex ml-20'>
+                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1'> Typescript</h1>
+                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1'> Javascipt</h1>
+                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1'> Java</h1>
+                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1'> Python</h1>
                         </div>
                     </div>
-                    <div className='flex mt-2 justify-center'>
-                        <div className='flex'>
-                            <h1 className='mr-2 rounded bg-slate-800 text-white text-light'> <SiAngular />Angular</h1>
-                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1'> <SiSpring />Spring Boot</h1>
-                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1'> <SiNextdotjs /> Next.js</h1>
-                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1'> <SiReact />React.js</h1>
-                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1'> <SiFirebase />Firebase</h1>
+                    <div className='flex mt-4 justify-center ml-4'>
+                        <div className='flex '>
+                            <h1 className='mr-2 rounded bg-slate-800 text-white text-light px-1'> Angular</h1>
+                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1 px-1'> SpringBoot</h1>
+                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1 px-1'>  Next.js</h1>
+                            <h1 className='mr-2 rounded bg-slate-800 text-white p-1 px-1'> Firebase</h1>
                         </div>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ const Navbar = () => {
             <Link href="/"><h1>KongmengLorDev</h1></Link>
         </div>
         <div className='md:hidden'>
-          <div className={nav ? 'fixed bg-black left-0 top-0 w-[75%] h-full overflow-auto ease-in duartion-800 whitespace-nowrap flex flex-col justify-between' : "fixed left-[-100%] top-0 p-10 ease-in duartion-500"} >
+          <div className={nav ? 'fixed bg-black left-0 top-0 w-[80%] h-full ease-in duartion-800 whitespace-nowrap flex flex-col justify-between' : "fixed left-[-100%] top-0 p-10 ease-in duartion-500"} >
               <div>
                 <div className='flex w-full items-center justify-between p-10'>
                   <div>
@@ -32,11 +32,11 @@ const Navbar = () => {
                   </div>
                 </div>
                 <div className='text-white p-10 m-10'>
-                  <Link href="/" onClick={handle}><h1 className='p-4 m-4 hover:scale-95 text-xl'>Home</h1></Link> 
-                  <Link href="/about" onClick={handle}><h1 className='p-4 m-4 hover:scale-95 text-xl' target='_blank'>About</h1></Link> 
-                  <Link href="/experiences" onClick={handle}><h1 className='p-4 m-4 hover:scale-95 text-xl' target='_blank'>Experiences</h1></Link> 
-                  <Link href="/projects" onClick={handle}><h1 className='p-4 m-4 hover:scale-95 text-xl' target='_blank'>Projects</h1></Link> 
-                  <Link href="/contact" onClick={handle}><h1 className='p-4 m-4 hover:scale-95 text-xl' target='_blank'>Contact</h1></Link> 
+                  <Link href="/" onClick={handle}><h1 className='hover:scale-95 text-xl'>Home</h1></Link> 
+                  <Link href="/about" onClick={handle}><h1 className='mt-8 hover:scale-95 text-xl' target='_blank'>About</h1></Link> 
+                  <Link href="/experiences" onClick={handle}><h1 className='mt-8 hover:scale-95 text-xl' target='_blank'>Experiences</h1></Link> 
+                  <Link href="/projects" onClick={handle}><h1 className='mt-8 hover:scale-95 text-xl' target='_blank'>Projects</h1></Link> 
+                  <Link href="/contact" onClick={handle}><h1 className='mt-8 hover:scale-95 text-xl' target='_blank'>Contact</h1></Link> 
                   {/* <Link href="https://lorxx504-kongmeng.github.io/resume/Kongmeng-Lor-2023-Resume.pdf" target='_blank'><h1 className='p-4 m-4 hover:scale-95 text-start text-xl'>Resume</h1></Link> 
                   <div className='p-4 m-4 flex justify-between'>
                     <Link href='https://www.linkedin.com/in/kongmengl/' target='_blank'><AiOutlineLinkedin size={40} className='hover:scale-75'/></Link> 
@@ -44,7 +44,7 @@ const Navbar = () => {
                   </div> */}
                 </div>
               </div>
-              <Footer />
+              {/* <Footer /> */}
           </div>
           <div onClick={handle}>
             <AiOutlineMenu className='hover:scale-75 cursor-pointer'/>
