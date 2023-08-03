@@ -41,6 +41,7 @@ const Projects = () => {
                       <div className='flex justify-center mt-4 p-2 m-2 bg-black ml-12'>
                         <Link href={item.github} target='_blank' className='shadow-xl rounded text-white hover:scale-75 px-2'>Github</Link>
                       </div>
+                      
                     </div>
                   </div>
                   </div>
