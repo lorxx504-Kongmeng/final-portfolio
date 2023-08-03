@@ -17,18 +17,18 @@ const Projects = () => {
             <div className='mt-6'>
               <heading className='text-4xl font-extrabold'>Projects.</heading>
             </div>
-            <div className='w-full h-full mx-auto p-2 md:w-[900px]'>
+            <div className='w-full h-full mx-auto p-2 md:w-[700px]'>
               <div className='p-2 m-2'>
                 {
                   projects.map((item, key) => {
                     return <div key={key} className='mt-4 md:shadow-xl md:p-4  border-t' >
-                      <div className='flex justify-center mt-5 border'>
+                      <div className='flex justify-center mt-5'>
                         <Image src={item.image} width="0" height="0" className='h-auto w-[300px]'/>
                       </div>
 
 
                     <div className='flex justify-center flex-wrap'>
-                      <div className='md:w-[500px] w-[400px] text-start '>
+                      <div className='md:w-[500px] w-[420px] text-start '>
                       <h1 className='text-xl mt-2 font-bold md:mb-4 ml-12'>{item.title}</h1>
                       <h1 className='mt-2 md:mb-4 ml-12'>{item.description}</h1>
                       <div className='flex mt-4 text-white justify-center flex-warp w-[440px]'>
