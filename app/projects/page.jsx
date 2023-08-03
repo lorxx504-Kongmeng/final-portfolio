@@ -22,7 +22,7 @@ const Projects = () => {
                 {
                   projects.map((item, key) => {
                     return <div key={key} className='mt-4 md:shadow-xl md:p-4  border-t' >
-                      <div className='flex justify-center mt-5 '>
+                      <div className='flex justify-center mt-5 border'>
                         <Image src={item.image} width="0" height="0" className='h-auto w-[300px]'/>
                       </div>
 
@@ -41,7 +41,7 @@ const Projects = () => {
                       <div className='flex justify-center mt-4 p-2 m-2 bg-black ml-12'>
                         <Link href={item.github} target='_blank' className='shadow-xl rounded text-white hover:scale-75 px-2'>Github</Link>
                       </div>
-                      
+
                     </div>
                   </div>
                   </div>
