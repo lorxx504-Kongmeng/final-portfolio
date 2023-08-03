@@ -16,7 +16,7 @@ export default function Home() {
           <AiOutlineArrowUp size={30} />
           <Link href="/" className='mt-2 ml-2'> Back to Top</Link>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
