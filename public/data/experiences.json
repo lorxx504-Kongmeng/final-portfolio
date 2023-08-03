@@ -1,5 +1,18 @@
 [
     {
+      "id": 0,
+      "title": "Junior Software QA Engineer",
+      "company": "Medtronic",
+      "location": "Remote",
+      "date": "July 2023 - Present",
+      "description": "At my current position, I am on the software qa team, where we do a lot of automated testing, including endpoint testing as well as UI testing. For an example, I write many different pytest scripts to test all the endpoints.",
+      "skills": [
+        "Python, Pytest, Playwright, Gitlab",
+        "Automated testing",
+        "CI/CD Pipeline, Manual testing"
+      ]
+    },
+    {
       "id": 1,
       "title": "Associate Software Engineer",
       "company": "Optum",
