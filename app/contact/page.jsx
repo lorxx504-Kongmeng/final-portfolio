@@ -28,12 +28,12 @@ const Contact = () => {
                     <div>
                     <div className='py-24 text-center md:py-4'>
                         <p className='font-bold text-xl'>kongmenglor122@gmail.com</p>
-                        <Link href="https://lorxx504-kongmeng.github.io/resume/Kongmeng-Lor-2023-Resume.pdf" className='text-xl' target='_blank'><p className='mt-4 hover:text-slate-500 text-lg'>Resume</p></Link>
+                        <Link href="https://lorxx504-kongmeng.github.io/resume/Kongmeng%20Lor's%20latest%202023%20Resume.pdf" className='text-xl' target='_blank'><p className='mt-4 hover:text-slate-500 text-lg'>Resume</p></Link>
                     </div>
                     <div className='flex justify-center items-center'>
                         <div>
                             <h1 className='text-xl font-extrabold'>Professional</h1>
-                            <Link href="thttps://www.linkedin.com/in/kongmengl/"  target='_blank'><p className='mt-4 hover:text-slate-500 text-lg text-center'>Linkedin</p></Link>
+                            <Link  href="https://www.linkedin.com/in/kongmengl/" target='_blank'><p className='mt-4 hover:text-slate-500 text-lg text-center'>Linkedin</p></Link>
                             <Link href="https://github.com/lorxx504-Kongmeng"  target='_blank'><p className='mt-4 hover:text-slate-500 text-lg text-center'>Github</p></Link>
                         </div>
                     </div>

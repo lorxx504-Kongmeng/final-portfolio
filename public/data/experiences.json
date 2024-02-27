@@ -1,11 +1,11 @@
 [
     {
       "id": 0,
-      "title": "Junior Software QA Engineer",
+      "title": "Junior Software Engineer - Validation/Testing",
       "company": "Medtronic",
       "location": "Remote",
       "date": "July 2023 - Present",
-      "description": "At my current position, I am on the software qa team, where we do a lot of automated testing, including endpoint testing as well as UI testing. For an example, I write many different pytest scripts to test all the endpoints.",
+      "description": "At my current position, I am on the validation team, where we do a lot of automated testing as well as some manual testing, this includes api endpoints testing through Postman and Pytest for automated. As for UI, I write Playwright scripts to test our Frontend components.",
       "skills": [
         "Python, Pytest, Playwright, Gitlab",
         "Automated testing",
